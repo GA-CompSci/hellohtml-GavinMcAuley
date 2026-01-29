@@ -2,5 +2,29 @@ header {
     background-image: url("https://mosh.com.sg/wp-content/uploads/2025/04/ranch-dressing-recipe-1744462932.jpg");
     background-position: center center;
     background-size: cover;
-    
+}
+
+#hero-text {
+    color:rgb(7, 52, 17) !important; 
+    text-shadow: 2px 2px 5px white;
+    font-size: 72px;
+}
+
+header p {
+    color:rgb(11, 99, 129);
+    font-size: 24px;
+    font-weight:900 !important;
+    text-shadow: 1px 1px 2px white;
+}
+
+header .btn {
+    background-color: rgb(21, 204, 91);
+    border-color: rgb(32, 63, 40);
+    color:white;
+
+}
+header .btn:hover {
+    background-color: rgb(21, 255, 0);
+    border-color: white
+    color: white;
 }
