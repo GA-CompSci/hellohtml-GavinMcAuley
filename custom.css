@@ -2,6 +2,7 @@ header {
     background-image: url("https://mosh.com.sg/wp-content/uploads/2025/04/ranch-dressing-recipe-1744462932.jpg");
     background-position: center center;
     background-size: cover;
+    box-shadow: 0px 0px 50px black;
 }
 
 #hero-text {
