@@ -1,32 +1,105 @@
+/* ---------- Global polish ---------- */
+body {
+    background-color: #f8f9fa;
+    color: #212529;
+    line-height: 1.6;
+}
+
+/* ---------- Header / Hero ---------- */
 header {
-    background-image: url("https://mosh.com.sg/wp-content/uploads/2025/04/ranch-dressing-recipe-1744462932.jpg");
-    background-position: center center;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.45),
+        rgba(0, 0, 0, 0.45)
+    ),
+    url("https://mosh.com.sg/wp-content/uploads/2025/04/ranch-dressing-recipe-1744462932.jpg");
+    background-position: center;
     background-size: cover;
-    box-shadow: 0px 0px 50px black;
-    margin-bottom: 50px;
+    margin-bottom: 4rem;
+
+    /* 🔹 slightly smaller hero */
+    min-height: 65vh;
+
+    /* 🔹 center content both ways */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 #hero-text {
-    color:rgb(7, 52, 17) !important; 
-    text-shadow: 2px 2px 5px white;
-    font-size: 72px;
+    color: #ffffff !important;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+
+    /* 🔹 slightly smaller text */
+    font-size: clamp(3rem, 6vw, 4.25rem);
 }
 
 header p {
-    color:rgb(11, 99, 129);
-    font-size: 24px;
-    font-weight:900 !important;
-    text-shadow: 1px 1px 2px white;
+    color: #e9ecef;
+    font-size: 1.2rem;
+    font-weight: 500;
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
 }
 
+/* ---------- Hero Button ---------- */
 header .btn {
-    background-color: rgb(21, 204, 91);
-    border-color: rgb(32, 63, 40);
-    color:white;
+    background-color: #198754;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.25s ease;
+}
 
-}
 header .btn:hover {
-    background-color: rgb(21, 255, 0);
-    border-color: white
-    color: white;
+    background-color: #157347;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
+
+/* ---------- Cards ---------- */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.card-text {
+    color: #495057;
+    font-size: 0.95rem;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background-color: #ffffff;
+}
+
+footer .nav-link {
+    transition: color 0.2s ease;
+}
+
+footer .nav-link:hover {
+    color: #198754;
+}
+
+
